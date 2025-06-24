@@ -27,7 +27,7 @@ def load_images(image_dir, target_size=(128, 128)):
                 images.append(img_array)
                 labels.append(label)
             except:
-                print(f"⚠️ Skipped: {img_path}")
+                print(f"Skipped: {img_path}")
     return np.array(images), np.array(labels)
 
 #Load dataset
@@ -42,7 +42,7 @@ X_train, X_test, y_train, y_test = train_test_split(
     X, y_encoded, test_size=0.2, stratify=y_encoded, random_state=42
 )
 
-print("✅ Data loaded and split:")
+print("Data loaded and split:")
 print(f"Train: {len(X_train)}, Test: {len(X_test)}")
 
 #Build model
