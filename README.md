@@ -42,7 +42,7 @@ dataset_folder/
         ...
 ```
 ```bash
-Then run: python inference.py --dataset path/to/dataset_folder
+**Then run** : python inference.py --dataset path/to/dataset_folder
 ```
 ```bash
 The model file (flag_classifier_vgg16.h5) will be downloaded automatically from Hugging Face just make sure u have an active internet connection while running inference.py
@@ -59,6 +59,6 @@ Internet connection is required on the first run to download the model.
 
 ```bash
 📫 Contact
-If you have any questions or issues, please open an issue or contact me at your-email@example.com.
+If you have any questions or issues, please open an issue or contact me at radiumiilee@gmail.com.
 ```
 
