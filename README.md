@@ -17,7 +17,7 @@ This project performs **image classification of South American country flags** u
 | Metric     | Value  |
 |------------|--------|
 | Accuracy   | 97.0%  |
-| Dataset    | 10,000+ self-collected flag images |
+| Dataset    | ~10,000 self-collected flag images |
 | Classes    | South American countries (e.g., Brazil, Argentina, Chile, etc.) |
 
 ---
