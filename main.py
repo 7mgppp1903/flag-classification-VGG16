@@ -12,7 +12,7 @@ from tensorflow.keras.callbacks import EarlyStopping
 from tensorflow.keras.preprocessing import image
 
 
-# Load images
+#Load images
 def load_images(image_dir, target_size=(128, 128)):
     images, labels = [], []
     for label in os.listdir(image_dir):
@@ -30,7 +30,7 @@ def load_images(image_dir, target_size=(128, 128)):
                 print(f"⚠️ Skipped: {img_path}")
     return np.array(images), np.array(labels)
 
-# Load dataset
+#Load dataset
 X, y = load_images("/Users/miilee/Desktop/ML proj/Dataset")  # Update if needed
 X = X / 255.0
 
@@ -45,7 +45,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 print("✅ Data loaded and split:")
 print(f"Train: {len(X_train)}, Test: {len(X_test)}")
 
-# Build model
+#Build model
 base_model = VGG16(weights='imagenet', include_top=False, input_shape=(128, 128, 3))
 for layer in base_model.layers[:-4]:
     layer.trainable = False  # Freeze early layers
@@ -70,7 +70,7 @@ X_tr, X_val, y_tr, y_val = train_test_split(
     X_train, y_train, test_size=0.1, stratify=y_train, random_state=42
 )
 
-# Data augmentation
+#Data augmentation
 datagen = ImageDataGenerator(
     rotation_range=15,
     width_shift_range=0.1,
@@ -83,7 +83,7 @@ datagen.fit(X_tr)
 train_gen = datagen.flow(X_tr, y_tr, batch_size=32)
 val_gen = datagen.flow(X_val, y_val, batch_size=32)
 
-# Train model
+#Train model
 early_stop = EarlyStopping(monitor='val_loss', patience=5, restore_best_weights=True)
 
 history = model.fit(
@@ -98,14 +98,14 @@ import pickle
 
 with open("training_history.pkl", "wb") as f:
     pickle.dump(history.history, f)
-print("✅ Training history saved to training_history.pkl")
+print("Training history saved to training_history.pkl")
 
 
-# ✅ Save model
+#Save model
 model.save("flag_classifier_vgg16.h5")
-print("✅ Model saved!")
+print(" Model saved!")
 
-# Evaluate
+#Evaluate
 loss, acc = model.evaluate(X_test, y_test, verbose=0)
-print(f"✅ Test Accuracy: {acc:.2f}")
+print(f" Test Accuracy: {acc:.2f}")
 
