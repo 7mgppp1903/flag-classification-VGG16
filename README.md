@@ -5,14 +5,6 @@ A custom dataset of over **10,000 flag images** was collected and used for train
 
 ---
 
-## Model Architecture
-
-- **Base Model**: VGG16 pretrained on ImageNet  
-- **Finetuned**: Entire model (including classification head) trained on flag dataset  
-- **Result**: Single end-to-end CNN model capable of classifying flags directly
-
----
-
 ## Results
 
 | Metric   | Value                                           |
