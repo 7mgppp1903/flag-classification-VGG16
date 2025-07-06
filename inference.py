@@ -45,7 +45,7 @@ def load_images(image_dir, target_size=(128, 128)):
                 print(f"Skipped: {img_path} ({e})")
     return np.array(images), np.array(labels)
 
-dataset_path = "/Users/miilee/Desktop/ML proj/Dataset"  # Update if needed
+dataset_path = "/Users/miilee/Desktop/ML proj/Dataset"  # Update
 print("Loading and preprocessing images...")
 X, y = load_images(dataset_path)
 X = X / 255.0
