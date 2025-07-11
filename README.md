@@ -17,7 +17,7 @@ This project performs **highly accurate image classification** of South American
 
 ---
 
-## Model Architecture
+## 🧩 Model Architecture
 
 ```mermaid
 graph LR
@@ -26,18 +26,6 @@ B --> C[Remove Final Layers]
 C --> D[XGBoost Classifier]
 D --> E[Country Prediction]
 
-
----
-
-## 📈 Performance Results
-
-### 🔢 Accuracy Metrics
-
-| Metric         | Value               |
-|----------------|---------------------|
-| Accuracy       | **97.0%**           |
-| Dataset Size   | ~10,000 images      |
-| Classes        | 12 South American countries |
 
 
 
