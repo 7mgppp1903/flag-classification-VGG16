@@ -17,7 +17,7 @@ This project performs **highly accurate image classification** of South American
 
 ---
 
-## 🧩 Model Architecture
+## Model Architecture
 
 ```mermaid
 graph LR
