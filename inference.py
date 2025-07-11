@@ -25,11 +25,11 @@ def load_images(image_dir, target_size=(128, 128)):
                 images.append(img_array)
                 labels.append(label)
             except:
-                print(f"⚠️ Skipped: {img_path}")
+                print(f"Skipped: {img_path}")
     return np.array(images), np.array(labels)
 
 # Load dataset
-print("🔄 Loading and preprocessing images...")
+print("Loading and preprocessing images...")
 X, y = load_images("/Users/miilee/Desktop/ML proj/Dataset")
 X = X / 255.0
 
@@ -40,15 +40,15 @@ class_labels = le.classes_
 X_train, X_test, y_train, y_test = train_test_split(
     X, y_encoded, test_size=0.2, stratify=y_encoded, random_state=42
 )
-print(f"✅ Loaded dataset: {len(X_train)} train, {len(X_test)} test")
+print(f"Loaded dataset: {len(X_train)} train, {len(X_test)} test")
 
 # Load model & training history
 model = load_model("flag_classifier_vgg16.h5")
-print("✅ Model loaded!")
+print("Model loaded!")
 
 with open("training_history.pkl", "rb") as f:
     history = pickle.load(f)
-print("✅ Training history loaded!")
+print("Training history loaded!")
 
 # Predict
 print("🔍 Running predictions...")
