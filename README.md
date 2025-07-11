@@ -1,6 +1,6 @@
 # South American Flag Classification with VGG16 + XGBoost
 
-![Model Visualization](https://visualisation.png)
+![Model Visualization](https://github.com/7mgppp1903/flag-classification-vgg16/blob/main/Results/visualisation.png)
 
 ## Project Overview
 
