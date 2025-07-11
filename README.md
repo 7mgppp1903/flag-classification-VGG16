@@ -52,5 +52,20 @@ D --> E[Country Prediction]
 ---
 
 
+---
+
+### `Notes`:
+
+```markdown
+## Notes
+
+- Model optimized specifically for South American flags  
+- Automatic image resizing during inference  
+- Internet connection required for initial model download  
+- Trained weights hosted on Hugging Face:  
+  🔗 [flag_classifier_vgg16.h5 – 116 MB](https://huggingface.co/7mgppp/flag-classifier-vgg16-model/blob/main/flag_classifier_vgg16.h5)
+
+
+
 
 
