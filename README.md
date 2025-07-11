@@ -28,9 +28,8 @@ D --> E[Country Prediction]
 
 ```
 ---
-## 📈 Performance Results
 
-### 🔢 Accuracy Metrics
+### Accuracy Metrics
 
 | Metric         | Value               |
 |----------------|---------------------|
