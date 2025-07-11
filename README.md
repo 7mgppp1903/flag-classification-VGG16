@@ -48,7 +48,7 @@ D --> E[Country Prediction]
 
 | Accuracy Progress | Loss Reduction |
 |------------------|----------------|
-| ![Accuracy](https://github.com/7mgppp1903/flag-classification-vgg16/blob/main/Results/model%20accuracy.png) | ![Loss](https://model_loss.png) |
+| ![Accuracy](https://github.com/7mgppp1903/flag-classification-vgg16/blob/main/Results/model%20accuracy.png) | ![Loss](https://github.com/7mgppp1903/flag-classification-vgg16/blob/main/Results/model%20loss.png) |
 
 ---
 
