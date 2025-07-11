@@ -51,7 +51,7 @@ with open("training_history.pkl", "rb") as f:
 print("Training history loaded!")
 
 # Predict
-print("🔍 Running predictions...")
+print("Running predictions...")
 y_pred = np.argmax(model.predict(X_test), axis=1)
 
 # Visualize predictions
