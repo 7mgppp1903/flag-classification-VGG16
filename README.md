@@ -38,6 +38,20 @@ D --> E[Country Prediction]
 | Dataset Size   | ~10,000 images      |
 | Classes        | 12 South American countries |
 
+---
+
+### Confusion Matrix
+
+![Confusion Matrix]()
+
+### 📊 Training Progress
+
+| Accuracy Progress | Loss Reduction |
+|------------------|----------------|
+| ![Accuracy](https://model_accuracy.png) | ![Loss](https://model_loss.png) |
+
+---
+
 
 
 
