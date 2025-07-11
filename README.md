@@ -1,56 +1,23 @@
-# Flag Classification of South American Countries 
+# 🇸🇦 South American Flag Classification with VGG16 + XGBoost
 
-This project performs **image classification of South American country flags** using a **finetuned VGG16 deep learning model**.  
-A custom dataset of over **10,000 flag images** was collected and used for training.
+![Model Visualization](https://visualisation.png)
 
----
+## 📌 Project Overview
 
-## Results
-
-| Metric   | Value                                           |
-|----------|------------------------------------------------|
-| Accuracy | 97.0%                                           |
-| Dataset  | ~10,000 self-collected flag images              |
-| Classes  | South American countries (e.g., Brazil, Argentina, Chile, etc.) |
+This project performs **highly accurate image classification** of South American country flags using a **hybrid deep learning approach**. We utilize **VGG16 for feature extraction** and **XGBoost for classification**, achieving **state-of-the-art results** on a custom dataset of over **10,000 flag images**.
 
 ---
 
-## How to Run It
+##  Key Features
 
-### 1. Install dependencies
+- Hybrid architecture combining VGG16 with XGBoost
+- 97% test accuracy on South American flags  
+- Comprehensive training and evaluation pipeline   
+- Detailed performance visualizations  
 
-```bash
-pip install -r requirements.txt
-```
-```bash
-You can use the inference.py script to predict on your own dataset or individual images.
-dataset_folder/
-    Brazil/
-        img1.jpg
-        img2.jpg
-    Argentina/
-        img3.jpg
-    Chile/
-        ...
-```
-```bash
-**Then run** : python inference.py --dataset path/to/dataset_folder
-```
-```bash
-The model file (flag_classifier_vgg16.h5) will be downloaded automatically from Hugging Face just make sure u have an active internet connection while running inference.py
-```
+---
 
-```bash
-Notes
-The model is finetuned specifically for South American flags and may not perform well on other datasets and would forcefully classify non South American flags.
+## Model Architecture
 
-Images will be resized automatically during inference.
 
-Internet connection is required on the first run to download the model.
-```
-
-```bash
-Contact
-If you have any questions or issues, please open an issue or contact me at radiumiilee1729@gmail.com.
-```
 
