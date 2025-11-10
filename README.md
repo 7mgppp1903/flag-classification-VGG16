@@ -33,7 +33,7 @@ D --> E[Country Prediction]
 
 | Metric         | Value               |
 |----------------|---------------------|
-| Accuracy       | 97.0%           |
+| Accuracy       | 80.0%           |
 | Dataset Size   | ~10,000 images      |
 | Classes        | 12 South American countries |
 
