@@ -22,8 +22,6 @@ This project performs **highly accurate image classification** of South American
 ```mermaid
 graph LR
 A[Input Image] --> B[VGG16 Feature Extraction]
-B --> C[Remove Final Layers]
-C --> D[XGBoost Classifier]
 D --> E[Country Prediction]
 
 ```
