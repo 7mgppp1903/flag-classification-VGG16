@@ -20,9 +20,11 @@ This project performs **highly accurate image classification** of South American
 ## Model Architecture
 
 ```mermaid
-graph LR
-A[Input Image] --> B[VGG16 Feature Extraction]--> C[Remove Classification Layer]--> B[XGBoost Classifier]--> C[Country Prediction]
-
+A[Input Image] --> B[VGG16 Feature Extraction]
+B --> C[Remove Final Classification Layer]
+C --> D[Extracted Feature Vector]
+D --> E[XGBoost Classifier]
+E --> F[Country Prediction]
 ```
 ---
 
